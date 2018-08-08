@@ -1,5 +1,5 @@
 var express = require('express');
-var express = require('wechat');
+var wechat = require('wechat');
 var router = express.Router();
 var weconfig = {
   token: 'TREEZH0',
