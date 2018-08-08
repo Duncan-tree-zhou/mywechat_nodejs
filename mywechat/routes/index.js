@@ -8,9 +8,7 @@ var weconfig = {
   encodingAESKey: 'iX2dUWhWvaDPGX6hiLGBs3CwqzUiifr5e5EdAwKnO7K'
 };
 
-/* GET home page. */
-router.get('/', wechat(weconfig, function(req, res, next) {
-	console.log(req.weixin);
+router.use('/', wechat(weconfig, function(req, res, next) {
 	var message = req.weixin;
 	//文本
 	if (message.Content === '1') {
